@@ -26,9 +26,11 @@ extern "C" {
 #include "cap_ffmpeg_impl.hpp"
 
 
+
 int main()
 {
-    CvCapture* capture = cvCaptureFromCAM(0);
+    CvCapture* capture = /*cvCaptureFromCAM(0)*/
+            cvCaptureFromAVI("rtsp://root:SonDCS123@192.168.1.20/axis-media/media.amp");
 
     int fps = 30;
     int width = 320;
