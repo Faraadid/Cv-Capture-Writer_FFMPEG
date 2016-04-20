@@ -4,7 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 CONFIG += link_pkgconfig
-PKGCONFIG += libavcodec opencv  libavutil libswscale libavformat
+PKGCONFIG += libavcodec opencv  libavutil libswscale libavformat libvlc vdpau
 
 SOURCES += main.cpp
 
